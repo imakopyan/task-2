@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.scss';
+import FileUploader from './components/FileUploader/FileUploader';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={s.appWrapper}>
+      <div className={s.app}>
+      <div className={s.uploadWrapper}>
+       <span className={s.title}>
+       Подтверждение аккаунта
+       </span> 
+       <span className={s.description}>
+       Для подтверждения вашего аккаунта вам нужно заполнить все поля, подтвердить почтовый ящик и телефон, а также загрузить сканы ваших документов.
+       </span>
+       <FileUploader text={{before: "Загрузить скан страницы с фотографией", after: "Страница с фотографией"}} id='1'/>
+       <FileUploader text={{before: "Загрузить скан страницы с пропиской", after: "Страница с пропиской"}} id='2'/>
+       </div>
       </div>
+       </div>
     );
   }
 }

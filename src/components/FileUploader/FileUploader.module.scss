@@ -1,0 +1,63 @@
+.uploadHidden {
+  // opacity: 0;
+  display:none;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+}
+.uploadWrapper {
+  margin-top: 36px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.uploadIcon {
+  width: 54px;
+  height: 54px;
+  background: #fff url('/assets/upload.svg') no-repeat center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+
+.isLoading {
+  background: #fff url('/assets/loading.svg') no-repeat center;
+}
+
+.isChecked {
+  background: #fff url('/assets/wait.svg') no-repeat center;
+}
+
+.approved {
+  background: #fff url('/assets/ok.svg') no-repeat center;
+}
+.message {
+  font-size: 16px;
+  margin-top: 6px;
+  color: #9c9c9c;
+}
+
+.messageDeclined {
+color: #c43524;
+}
+
+.messageApproved {
+color: #7fa050;
+}
+
+.uploadText {
+font-size: 18px;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.uploadTextDescription {
+  color: #9c9c9c;
+  font-size: 16px;
+  margin-top: 4px;
+
+}
